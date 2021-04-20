@@ -13,7 +13,6 @@ import os
 def getData():
 
     cpudata = {}
-    opencores = {0: 0, 1: 0, 2: 0, 3: 0}
 
     output = os.popen('mpstat -P ALL 1 1').readlines()
 
@@ -25,7 +24,15 @@ def getData():
         1 : (cpudata['4'], cpudata['5'], cpudata['6'], cpudata['7']), 
         2 : (cpudata['8'], cpudata['9'], cpudata['10'], cpudata['11']), 
         3 : (cpudata['12'], cpudata['13'], cpudata['14'], cpudata['15'])
-        }
+    }
+
+    return serverdata
+    
+
+def summedData():
+
+    serverdata = getData()
+    opencores = {0: 0, 1: 0, 2: 0, 3: 0}
 
     for server in serverdata:
         for index, value in enumerate(serverdata[server]):
