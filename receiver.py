@@ -5,21 +5,23 @@
 # Created: 18 May 2021
 # Purpose: handle the input of a job and determine which machine to send it to
 
-def handle_job(server_data):
+def handle_job(server_data, estimated_cores):
+    # server_data is a dictionary, estimated_cores is an integer
     serverID = ''
-    dest_usage = 100
-    # Assume that data comes into server in the form of an array of arrays with data in the form of:
-    # [serverID, current usage percent (out of 100)] 
-    for num in range(len(server_data)):
-        if (server_data[num][1] < dest_usage):
-            serverID = server_data[num][0]
-            dest_usage = server_data[num][1]
-    if (serverID == ''):
-        print("\nAll current servers are at maximum capacity. We will wait until one of the servers finishes a task.\n")
-        return 0
+    cores_used = 10000 # arbitrarily large number
 
-    print(f'\nThis job will be sent to the server with the most available processing power, server {serverID}, currently at {dest_usage}% CPU usage.\n')
-    return serverID  
+    # Code to get the server that has the number of cores closest to the estimated
+    # number of cores needed for this code.
+    for server, opencores in server_data.items():
+        if (abs(opencores - estimated_cores) < abs(estimated_cores - cores_used)):
+            serverID = server
+            cores_used = min(open_cores, estimated_cores)
+    if (serverID == ''):
+        print("All servers are using all of their cores. Please wait until cores are available.\n")
+        return [-1, -1]
+
+    print(f'\nThis job will be sent to the server with the most available processing power, server {serverID}, and will use {cores_used} cores.\n')
+    return [serverID, cores_used]  
 
 # Validation Testing
 """
