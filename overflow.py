@@ -1,5 +1,8 @@
 from queue import queue
 
+def format_task(name, cores, server):
+    return  {"Command" : name, "Cores" : cores, "Server" : server}
+
 def process_jobs():
     q = queue
     """
@@ -14,4 +17,5 @@ def process_jobs():
         jobdata = format_task(server, cores) # dict(command:hulk.py -c 5, Cores:3)
         sender(jobdata, server)
         """
-        
+
+
