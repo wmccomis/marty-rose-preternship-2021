@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+
+# Luke Marushack
+# Created: 24 April 2021
+# Purpose: determine the importance of a given code segment.
+
 def get_importance(run_time, urgency, estimated_cores):
     # Run Time: 1-5, 5 longest
     # Urgency: 1-5, 5 highest

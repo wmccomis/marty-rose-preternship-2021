@@ -21,7 +21,7 @@ def handle_job(server_data, estimated_cores):
         return [-1, -1]
 
     print(f'\nThis job will be sent to the server with the most available processing power, server {serverID}, and will use {cores_used} cores.\n')
-    return [serverID, cores_used]  
+    return serverID, cores_used  
 
 # Validation Testing
 """
