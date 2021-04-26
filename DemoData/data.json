@@ -1,289 +1,298 @@
 {
-"1": [
-            name: copy.py,
-            run_time: 0.10865044593811035,
-            urgency: 10,
-            size: 157
-            ],
+    "1": {
+               "name": "copy.py",
+                "approximate_run_time": "1",
+                "urgency": "5",
+                "size": "157",
+                "core_estimation": "1"
+                },
         
-"2": [
-            name: courses.py,
-            run_time: 1.849463939666748,
-            urgency: 5,
-            size: 1127
-            ],
+    "2": {
+               "name": "courses.py",
+                "approximate_run_time": "2",
+                "urgency": "7",
+                "size": "1127",
+                "core_estimation": "3"
+                },
         
-"3": [
-            name: demographics.py,
-            run_time: 0.5100066661834717,
-            urgency: 3,
-            size: 5841
-            ],
+    "3": {
+               "name": "demographics.py",
+                "approximate_run_time": "1",
+                "urgency": "5",
+                "size": "5841",
+                "core_estimation": "3"
+                },
         
-"4": [
-            name: evens.py,
-            run_time: 0.194047212600708,
-            urgency: 1,
-            size: 184
-            ],
+    "4": {
+               "name": "exists.py",
+                "approximate_run_time": "1",
+                "urgency": "10",
+                "size": "198",
+                "core_estimation": "1"
+                },
         
-"5": [
-            name: exists.py,
-            run_time: 0.08442401885986328,
-            urgency: 8,
-            size: 198
-            ],
+    "5": {
+               "name": "file10.py",
+                "approximate_run_time": "1",
+                "urgency": "10",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"6": [
-            name: file10.py,
-            run_time: 2.063035011291504,
-            urgency: 2,
-            size: 61
-            ],
+    "6": {
+               "name": "file110.py",
+                "approximate_run_time": "1",
+                "urgency": "9",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"7": [
-            name: file110.py,
-            run_time: 2.821540117263794,
-            urgency: 7,
-            size: 61
-            ],
+    "7": {
+               "name": "file111.py",
+                "approximate_run_time": "1",
+                "urgency": "7",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"8": [
-            name: file111.py,
-            run_time: 5.5825135707855225,
-            urgency: 3,
-            size: 61
-            ],
+    "8": {
+               "name": "file12.py",
+                "approximate_run_time": "3",
+                "urgency": "7",
+                "size": "140",
+                "core_estimation": "2"
+                },
         
-"9": [
-            name: file12.py,
-            run_time: 5.584465026855469,
-            urgency: 7,
-            size: 61
-            ],
+    "9": {
+               "name": "file13.py",
+                "approximate_run_time": "1",
+                "urgency": "7",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"10": [
-            name: file13.py,
-            run_time: 3.042140483856201,
-            urgency: 7,
-            size: 61
-            ],
+    "10": {
+               "name": "file14.py",
+                "approximate_run_time": "1",
+                "urgency": "3",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"11": [
-            name: file14.py,
-            run_time: 5.585923433303833,
-            urgency: 6,
-            size: 61
-            ],
+    "11": {
+               "name": "file15.py",
+                "approximate_run_time": "1",
+                "urgency": "6",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"12": [
-            name: file15.py,
-            run_time: 5.273577928543091,
-            urgency: 2,
-            size: 61
-            ],
+    "12": {
+               "name": "file16.py",
+                "approximate_run_time": "1",
+                "urgency": "10",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"13": [
-            name: file16.py,
-            run_time: 2.989928722381592,
-            urgency: 6,
-            size: 61
-            ],
+    "13": {
+               "name": "file17.py",
+                "approximate_run_time": "1",
+                "urgency": "4",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"14": [
-            name: file17.py,
-            run_time: 6.9447808265686035,
-            urgency: 8,
-            size: 61
-            ],
+    "14": {
+               "name": "file18.py",
+                "approximate_run_time": "1",
+                "urgency": "6",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"15": [
-            name: file18.py,
-            run_time: 5.9164042472839355,
-            urgency: 8,
-            size: 61
-            ],
+    "15": {
+               "name": "file19.py",
+                "approximate_run_time": "1",
+                "urgency": "1",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"16": [
-            name: file19.py,
-            run_time: 3.8054046630859375,
-            urgency: 8,
-            size: 61
-            ],
+    "16": {
+               "name": "file1.py",
+                "approximate_run_time": "1",
+                "urgency": "9",
+                "size": "39",
+                "core_estimation": "1"
+                },
         
-"17": [
-            name: file1.py,
-            run_time: 0.08579754829406738,
-            urgency: 7,
-            size: 39
-            ],
+    "17": {
+               "name": "file20.py",
+                "approximate_run_time": "1",
+                "urgency": "3",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"18": [
-            name: file20.py,
-            run_time: 5.154300212860107,
-            urgency: 10,
-            size: 61
-            ],
+    "18": {
+               "name": "file2.py",
+                "approximate_run_time": "1",
+                "urgency": "7",
+                "size": "39",
+                "core_estimation": "1"
+                },
         
-"19": [
-            name: file2.py,
-            run_time: 0.08469486236572266,
-            urgency: 6,
-            size: 39
-            ],
+    "19": {
+               "name": "file3.py",
+                "approximate_run_time": "1",
+                "urgency": "2",
+                "size": "74",
+                "core_estimation": "1"
+                },
         
-"20": [
-            name: file3.py,
-            run_time: 0.0844724178314209,
-            urgency: 1,
-            size: 74
-            ],
+    "20": {
+               "name": "file4.py",
+                "approximate_run_time": "1",
+                "urgency": "4",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"21": [
-            name: file4.py,
-            run_time: 2.9195845127105713,
-            urgency: 1,
-            size: 61
-            ],
+    "21": {
+               "name": "file5.py",
+                "approximate_run_time": "1",
+                "urgency": "2",
+                "size": "116",
+                "core_estimation": "1"
+                },
         
-"22": [
-            name: file5.py,
-            run_time: 12.958834409713745,
-            urgency: 7,
-            size: 116
-            ],
+    "22": {
+               "name": "file6.py",
+                "approximate_run_time": "1",
+                "urgency": "5",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"23": [
-            name: file6.py,
-            run_time: 4.725190162658691,
-            urgency: 10,
-            size: 61
-            ],
+    "23": {
+               "name": "file7.py",
+                "approximate_run_time": "1",
+                "urgency": "7",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"24": [
-            name: file7.py,
-            run_time: 2.9927546977996826,
-            urgency: 6,
-            size: 61
-            ],
+    "24": {
+               "name": "file8.py",
+                "approximate_run_time": "1",
+                "urgency": "7",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"25": [
-            name: file8.py,
-            run_time: 5.963494777679443,
-            urgency: 4,
-            size: 61
-            ],
+    "25": {
+               "name": "file9.py",
+                "approximate_run_time": "1",
+                "urgency": "9",
+                "size": "61",
+                "core_estimation": "1"
+                },
         
-"26": [
-            name: file9.py,
-            run_time: 3.022286891937256,
-            urgency: 3,
-            size: 61
-            ],
+    "26": {
+               "name": "json.sh",
+                "approximate_run_time": "1",
+                "urgency": "6",
+                "size": "291",
+                "core_estimation": "1"
+                },
         
-"27": [
-            name: hulk.py,
-            run_time: 0.15568232536315918,
-            urgency: 2,
-            size: 3785
-            ],
+    "27": {
+               "name": "machines.py",
+                "approximate_run_time": "1",
+                "urgency": "4",
+                "size": "429",
+                "core_estimation": "2"
+                },
         
-"28": [
-            name: json.sh,
-            run_time: 0.008642435073852539,
-            urgency: 3,
-            size: 291
-            ],
+    "28": {
+               "name": "reddit.py",
+                "approximate_run_time": "1",
+                "urgency": "6",
+                "size": "2876",
+                "core_estimation": "3"
+                },
         
-"29": [
-            name: machines.py,
-            run_time: 0.6955676078796387,
-            urgency: 10,
-            size: 429
-            ],
+    "29": {
+               "name": "test_demographics.sh",
+                "approximate_run_time": "2",
+                "urgency": "1",
+                "size": "9784",
+                "core_estimation": "3"
+                },
         
-"30": [
-            name: __pycache__,
-            run_time: 0.0033936500549316406,
-            urgency: 8,
-            size: 80
-            ],
+    "30": {
+               "name": "test_exists.sh",
+                "approximate_run_time": "1",
+                "urgency": "2",
+                "size": "1054",
+                "core_estimation": "3"
+                },
         
-"31": [
-            name: reddit.py,
-            run_time: 0.42015862464904785,
-            urgency: 6,
-            size: 2876
-            ],
+    "31": {
+               "name": "test_reddit.sh",
+                "approximate_run_time": "2",
+                "urgency": "9",
+                "size": "8398",
+                "core_estimation": "3"
+                },
         
-"32": [
-            name: test_demographics.sh,
-            run_time: 7.832729339599609,
-            urgency: 6,
-            size: 9784
-            ],
+    "32": {
+               "name": "test_scripts.sh",
+                "approximate_run_time": "2",
+                "urgency": "8",
+                "size": "1468",
+                "core_estimation": "3"
+                },
         
-"33": [
-            name: test_exists.sh,
-            run_time: 0.35178303718566895,
-            urgency: 6,
-            size: 1054
-            ],
+    "33": {
+               "name": "test_translations.sh",
+                "approximate_run_time": "1",
+                "urgency": "4",
+                "size": "1381",
+                "core_estimation": "3"
+                },
         
-"34": [
-            name: test_reddit.sh,
-            run_time: 6.089046001434326,
-            urgency: 5,
-            size: 8398
-            ],
+    "34": {
+               "name": "translate1.py",
+                "approximate_run_time": "1",
+                "urgency": "8",
+                "size": "173",
+                "core_estimation": "1"
+                },
         
-"35": [
-            name: test_scripts.sh,
-            run_time: 2.757937431335449,
-            urgency: 7,
-            size: 1468
-            ],
+    "35": {
+               "name": "translate2.py",
+                "approximate_run_time": "1",
+                "urgency": "6",
+                "size": "215",
+                "core_estimation": "1"
+                },
         
-"36": [
-            name: test_translations.sh,
-            run_time: 0.815791130065918,
-            urgency: 10,
-            size: 1381
-            ],
+    "36": {
+               "name": "translate3.py",
+                "approximate_run_time": "1",
+                "urgency": "7",
+                "size": "376",
+                "core_estimation": "2"
+                },
         
-"37": [
-            name: translate1.py,
-            run_time: 0.08441996574401855,
-            urgency: 1,
-            size: 173
-            ],
-        
-"38": [
-            name: translate2.py,
-            run_time: 0.0837252140045166,
-            urgency: 8,
-            size: 215
-            ],
-        
-"39": [
-            name: translate3.py,
-            run_time: 0.520134687423706,
-            urgency: 6,
-            size: 376
-            ],
-        
-"40": [
-            name: translate4.py,
-            run_time: 0.11371779441833496,
-            urgency: 6,
-            size: 281
-            ],
-        
-"41": [
-            name: users.py,
-            run_time: 0.08715391159057617,
-            urgency: 5,
-            size: 446
-            ],
-        
+   "37": {
+          "name": "hulk.py",
+          "approximate_run_time": "5",
+          "urgency": "6",
+          "size": "3785",
+          "core_estimation": "4"
+        },
+    
 }

@@ -19,41 +19,38 @@ print('{', file=fileOut)
 # loop through files in directory
 for program in ls:
     program=program.rstrip()
-    #make sure the program is not recursively running itself or that it isn't trash output
-    if program != os.path.basename(sys.argv[0]) and program != 'data.json' and 'txt' not in program and program != "hulk.py":
+    #make sure the program is not recursively running itself or that it isn't trash output. Make sure it does not run 'hulk.py' and it does not run the cache directory some scripts may create
+    if program != os.path.basename(sys.argv[0]) and program != 'data.json' and 'txt' not in program and program != "hulk.py" and program != "__pycache__":
         #redirect program call into &> to simulate stdout output
-        prog_call=f'./{program} > {program}.txt'
-        
-        print(f'program running: {program}') 
+        prog_call=f'./{program} > /dev/null'
+        print(f'now running: {prog_call}') 
 
         # measure run-time
         start_time=time.time()
         os.system(prog_call)
         program_time=time.time() - start_time
-
         # convert approximate run_time to 1-5
             # Parameteres
-            # less than one minute = 1
-            # more than one minute and less than 5 minutes = 2
-            # more than five minutes, less than 30 = 3
-            # more than thirty minutes, less than one hour = 4
-            # more than one hour = 5
+            # less than one second = 1
+            # more than one second and less than one minute = 2
+            # more than one minute, less than ten = 3
+            # more than ten minutes, less than thirty = 4
+            # more than thirty minutes = 5
 
-        if program_time<60:
+        if program_time<1:
             program_time = 1
-        elif program_time>=60 and program_time<300:
+        elif program_time>=1 and program_time<60:
             program_time = 2
-        elif program_time >= 300 and program_time < 1800:
+        elif program_time >= 60 and program_time < 600:
             program_time = 3
-        elif program_time >= 1800 and program_time < 3600:
+        elif program_time >= 600 and program_time < 3000:
             program_time = 4
         else:
             program_time = 5
-
         # get size 
         size_string=f"stat {program} | grep -E 'Size *' | cut -d ' ' -f 4"
         size=os.popen(size_string).read()
-        size=float(size.rstrip())
+        size=size.rstrip()
 
         # obtain number of cores necessary for each file
         # obtain x_time function that will return a number between 0.2 and 1
@@ -61,7 +58,6 @@ for program in ls:
 
         #obtain a x_size function that will return a number between 0 and 1
         f_xsize=1-(1/( (float(size)/500)**2 + 1) )
-
         # get sum and estimate cores neeeded depending on estimated run time and size
         fx_sum=f_xtime+f_xsize
         if fx_sum<0.5:
@@ -74,52 +70,38 @@ for program in ls:
             cores_estimation = 4
         
         # add ID_NUMBER, run-time, urgency, size and number of cores needed
-        json_output=f'''"{ID_NUMBER}": [
-            "name": "{program}",
-            "approximate_run_time": "{program_time}",
-            "urgency": "{random.randint(1,10)}",
-            "size": "{size}",
-            "core_estimation": "{cores_estimation}"
-            ],
+        json_output=f'''    "{ID_NUMBER}": {{
+               "name": "{program}",
+                "approximate_run_time": "{program_time}",
+                "urgency": "{random.randint(1,10)}",
+                "size": "{size}",
+                "core_estimation": "{cores_estimation}"
+                }},
         '''
         
         # update ID number
         ID_NUMBER+=1
-
         print(json_output, file=fileOut)
 
-#manually run hulk.py with 4 cores
+#manually add hulk.py
 program="hulk.py"
-start_time=time.time()
-os.system("./hulk.py -l 6 -c 4 -s hashes.txt > hulk.txt")
-program_time=time.time() - start_time
-
-if program_time<60:
-    program_time = 1
-elif program_time>=60 and program_time<300:
-    program_time = 2
-elif program_time >= 300 and program_time < 1800:
-    program_time = 3
-elif program_time >= 1800 and program_time < 3600:
-    program_time = 4
-else:
-    program_time = 5
-
-
 size_string=f"stat {program} | grep -E 'Size *' | cut -d ' ' -f 4"
 size=os.popen(size_string).read()
 size=size.rstrip()
 
 # add ID_NUMBER, run-time, urgency, size and number of cores needed
-json_output=f'''"{ID_NUMBER}": [
-    "name": "{program}",
-    "approximate_run_time": "{program_time}",
-    "urgency": "{random.randint(1,10)}",
-    "size": "{size}",
-    "core_estimation": "4"
-    ],
+json_output=f'''   "{ID_NUMBER}": {{
+          "name": "{program}",
+          "approximate_run_time": "5",
+          "urgency": "{random.randint(1,10)}",
+          "size": "{size}",
+          "core_estimation": "4"
+        }},
     '''
             
+print(json_output, file=fileOut)
+
 # close file
 print('}', file=fileOut)
 fileOut.close()
+print("File ready")
