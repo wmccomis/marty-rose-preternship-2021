@@ -15,7 +15,7 @@ def handle_job(server_data, estimated_cores):
     for server, opencores in server_data.items():
         if (abs(int(opencores) - int(estimated_cores)) < abs(int(estimated_cores) - int(cores_used))):
             serverID = server
-            cores_used = min(int(open_cores), int(estimated_cores))
+            cores_used = min(int(opencores), int(estimated_cores))
     if (serverID == ''):
         print("All servers are using all of their cores. Please wait until cores are available.\n")
         return [-1, -1]
