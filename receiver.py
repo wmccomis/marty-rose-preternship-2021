@@ -13,9 +13,9 @@ def handle_job(server_data, estimated_cores):
     # Code to get the server that has the number of cores closest to the estimated
     # number of cores needed for this code.
     for server, opencores in server_data.items():
-        if (abs(opencores - estimated_cores) < abs(estimated_cores - cores_used)):
+        if (abs(int(opencores) - int(estimated_cores)) < abs(int(estimated_cores) - int(cores_used))):
             serverID = server
-            cores_used = min(open_cores, estimated_cores)
+            cores_used = min(int(open_cores), int(estimated_cores))
     if (serverID == ''):
         print("All servers are using all of their cores. Please wait until cores are available.\n")
         return [-1, -1]
