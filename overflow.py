@@ -33,6 +33,7 @@ def process_jobs(filename):
             sleep(0.5)
             continue
         jobdata = format_task(curr_job["name"], cores_used, serverID)
+        print(jobdata)
         sender(jobdata)
         q.get()
 
