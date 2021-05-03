@@ -33,7 +33,7 @@ def sender(jobData):
 
     # runs the command on the cores, sends output to a text file, and runs file in background
     
-    os.system(f"sudo chrt -r 1 taskset -c {cores} ./DemoData/{jobData['Command']} > {jobData['Command'].txt &")
+    os.system(f"sudo chrt -r 1 taskset -c {cores} ./DemoData/{jobData['Command']} > {jobData['Command']}.txt &")
 
 
 
