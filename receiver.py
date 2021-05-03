@@ -14,6 +14,8 @@ def handle_job(server_data, estimated_cores):
 
     # Code to get the server that has the number of cores closest to the estimated
     # number of cores needed for this code.
+
+    
     for server, opencores in server_data.items():
         # look for exact number
         if ( int(opencores) >= int(estimated_cores) ):
