@@ -33,11 +33,11 @@ def sender(jobData):
 
     # runs the command on the cores, sends output to a text file, and runs file in background
     
-    os.system(f"sudo chrt -r 1 taskset -c {cores} ./DemoData/{jobData['Command']} > output.txt &")
+    os.system(f"sudo chrt -r 1 taskset -c {cores} ./DemoData/{jobData['Command']} > {jobData['Command'].txt &")
 
 
 
 # SAMPLE FUNCTION CALL:
 
-# job = {"Command" : "./hulk.py -l 5 -c 6", "Cores" : 3, "Server" : 2}
+# job = {"Command" : "hulk.py -l 5 -c 6", "Cores" : 4, "Server" : 2}
 # sender(job)
