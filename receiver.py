@@ -9,7 +9,7 @@
 
 def handle_job(server_data, estimated_cores):
     # server_data is a dictionary, estimated_cores is an integer
-    serverID = ''
+    serverID = -1
     cores_used = 10000 # arbitrarily large number
 
     # Code to get the server that has the number of cores closest to the estimated
@@ -18,7 +18,7 @@ def handle_job(server_data, estimated_cores):
         if (abs(int(opencores) - int(estimated_cores)) < abs(int(estimated_cores) - int(cores_used))):
             serverID = server
             cores_used = min(int(opencores), int(estimated_cores))
-    if (serverID == ''):
+    if (serverID == -1):
         print("All servers are using all of their cores. Please wait until cores are available.\n")
         return [-1, -1]
 
