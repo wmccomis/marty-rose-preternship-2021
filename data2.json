@@ -1,0 +1,41 @@
+{
+    "1": {
+               "name": "hulk.py -l 5 -c 3",
+                "approximate_run_time": "1",
+                "urgency": "5",
+                "size": "157",
+                "core_estimation": "3"
+                },
+        
+    "2": {
+               "name": "hulk.py -l 6 -c 3",
+                "approximate_run_time": "2",
+                "urgency": "7",
+                "size": "1127",
+                "core_estimation": "3"
+                },
+        
+    "3": {
+               "name": "hulk.py -l 7 -c 4",
+                "approximate_run_time": "1",
+                "urgency": "5",
+                "size": "5841",
+                "core_estimation": "4"
+                },
+        
+    "4": {
+               "name": "hulk.py -l 6 -c 4",
+                "approximate_run_time": "1",
+                "urgency": "10",
+                "size": "198",
+                "core_estimation": "4"
+                },
+        
+    "5": {
+               "name": "hulk.py -l 5 -c 2",
+                "approximate_run_time": "1",
+                "urgency": "10",
+                "size": "61",
+                "core_estimation": "2"
+               }
+}	       
