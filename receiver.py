@@ -20,8 +20,17 @@ def handle_job(server_data, estimated_cores):
         # look for exact number
         if ( int(opencores) >= int(estimated_cores) ):
         # if (abs(int(opencores) - int(estimated_cores)) < abs(int(estimated_cores) - int(cores_used))):
+            # offset - offset core count
             serverID = server
             cores_used = min(int(opencores), int(estimated_cores))
+            if (cores_used == estimated_cores):
+                break
+
+        # if a job has n+1 cores estimated and a server has n cores, job will agree to be run with n cores
+        elif (int(opencores) + 1 == int(estimated_cores)):
+            serverID = server
+            cores_used = opencores
+
     if (serverID == -1):
         print("All servers are using all of their cores. Please wait until cores are available.\n")
         return [-1, -1]
