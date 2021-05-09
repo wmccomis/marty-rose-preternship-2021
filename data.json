@@ -1,297 +1,254 @@
 {
     "1": {
-               "name": "copy.py",
-                "approximate_run_time": "1",
-                "urgency": "5",
-                "size": "157",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 5 -c 4",
+            "approximate_run_time": "5",
+            "urgency": "10",
+            "size": "500",
+            "core_estimation": "3"
+        },
     "2": {
-               "name": "courses.py",
-                "approximate_run_time": "2",
-                "urgency": "7",
-                "size": "1127",
-                "core_estimation": "3"
-                },
-        
+            "name": "crack.py -l 6 -c 4",
+            "approximate_run_time": "1",
+            "urgency": "5",
+            "size": "600",
+            "core_estimation": "4"
+        },
     "3": {
-               "name": "demographics.py",
-                "approximate_run_time": "1",
-                "urgency": "5",
-                "size": "5841",
-                "core_estimation": "3"
-                },
-        
+            "name": "crack.py -l 5 -c 4",
+            "approximate_run_time": "4",
+            "urgency": "4",
+            "size": "500",
+            "core_estimation": "4"
+        },
     "4": {
-               "name": "exists.py",
-                "approximate_run_time": "1",
-                "urgency": "10",
-                "size": "198",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 5 -c 2",
+            "approximate_run_time": "5",
+            "urgency": "3",
+            "size": "500",
+            "core_estimation": "2"
+        },
     "5": {
-               "name": "file10.py",
-                "approximate_run_time": "1",
-                "urgency": "10",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 4",
+            "approximate_run_time": "2",
+            "urgency": "6",
+            "size": "400",
+            "core_estimation": "4"
+        },
     "6": {
-               "name": "file110.py",
-                "approximate_run_time": "1",
-                "urgency": "9",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 2",
+            "approximate_run_time": "5",
+            "urgency": "10",
+            "size": "400",
+            "core_estimation": "2"
+        },
     "7": {
-               "name": "file111.py",
-                "approximate_run_time": "1",
-                "urgency": "7",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 6 -c 4",
+            "approximate_run_time": "5",
+            "urgency": "10",
+            "size": "600",
+            "core_estimation": "4"
+        },
     "8": {
-               "name": "file12.py",
-                "approximate_run_time": "3",
-                "urgency": "7",
-                "size": "140",
-                "core_estimation": "2"
-                },
-        
+            "name": "crack.py -l 5 -c 3",
+            "approximate_run_time": "2",
+            "urgency": "9",
+            "size": "500",
+            "core_estimation": "3"
+        },
     "9": {
-               "name": "file13.py",
-                "approximate_run_time": "1",
-                "urgency": "7",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 1",
+            "approximate_run_time": "3",
+            "urgency": "10",
+            "size": "400",
+            "core_estimation": "1"
+        },
     "10": {
-               "name": "file14.py",
-                "approximate_run_time": "1",
-                "urgency": "3",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 3",
+            "approximate_run_time": "3",
+            "urgency": "2",
+            "size": "400",
+            "core_estimation": "3"
+        },
     "11": {
-               "name": "file15.py",
-                "approximate_run_time": "1",
-                "urgency": "6",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 5 -c 3",
+            "approximate_run_time": "2",
+            "urgency": "9",
+            "size": "500",
+            "core_estimation": "3"
+        },
     "12": {
-               "name": "file16.py",
-                "approximate_run_time": "1",
-                "urgency": "10",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 2",
+            "approximate_run_time": "4",
+            "urgency": "1",
+            "size": "400",
+            "core_estimation": "2"
+        },
     "13": {
-               "name": "file17.py",
-                "approximate_run_time": "1",
-                "urgency": "4",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 2",
+            "approximate_run_time": "3",
+            "urgency": "2",
+            "size": "400",
+            "core_estimation": "2"
+        },
     "14": {
-               "name": "file18.py",
-                "approximate_run_time": "1",
-                "urgency": "6",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 5 -c 1",
+            "approximate_run_time": "4",
+            "urgency": "4",
+            "size": "500",
+            "core_estimation": "1"
+        },
     "15": {
-               "name": "file19.py",
-                "approximate_run_time": "1",
-                "urgency": "1",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 1",
+            "approximate_run_time": "4",
+            "urgency": "4",
+            "size": "400",
+            "core_estimation": "1"
+        },
     "16": {
-               "name": "file1.py",
-                "approximate_run_time": "1",
-                "urgency": "9",
-                "size": "39",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 1",
+            "approximate_run_time": "2",
+            "urgency": "4",
+            "size": "400",
+            "core_estimation": "1"
+        },
     "17": {
-               "name": "file20.py",
-                "approximate_run_time": "1",
-                "urgency": "3",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 1",
+            "approximate_run_time": "3",
+            "urgency": "4",
+            "size": "400",
+            "core_estimation": "1"
+        },
     "18": {
-               "name": "file2.py",
-                "approximate_run_time": "1",
-                "urgency": "7",
-                "size": "39",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 1",
+            "approximate_run_time": "4",
+            "urgency": "4",
+            "size": "400",
+            "core_estimation": "1"
+        },
     "19": {
-               "name": "file3.py",
-                "approximate_run_time": "1",
-                "urgency": "2",
-                "size": "74",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 3 -c 1",
+            "approximate_run_time": "2",
+            "urgency": "4",
+            "size": "300",
+            "core_estimation": "1"
+        },
     "20": {
-               "name": "file4.py",
-                "approximate_run_time": "1",
-                "urgency": "4",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 3 -c 1",
+            "approximate_run_time": "3",
+            "urgency": "4",
+            "size": "300",
+            "core_estimation": "1"
+        },
     "21": {
-               "name": "file5.py",
-                "approximate_run_time": "1",
-                "urgency": "2",
-                "size": "116",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 3 -c 2",
+            "approximate_run_time": "2",
+            "urgency": "4",
+            "size": "300",
+            "core_estimation": "2"
+        },
     "22": {
-               "name": "file6.py",
-                "approximate_run_time": "1",
-                "urgency": "5",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 3 -c 2",
+            "approximate_run_time": "2",
+            "urgency": "10",
+            "size": "300",
+            "core_estimation": "2"
+        },
     "23": {
-               "name": "file7.py",
-                "approximate_run_time": "1",
-                "urgency": "7",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 3 -c 1",
+            "approximate_run_time": "3",
+            "urgency": "1",
+            "size": "300",
+            "core_estimation": "1"
+        },
+    "23": {
+            "name": "crack.py -l 4 -c 1",
+            "approximate_run_time": "4",
+            "urgency": "1",
+            "size": "400",
+            "core_estimation": "1"
+        },
     "24": {
-               "name": "file8.py",
-                "approximate_run_time": "1",
-                "urgency": "7",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 2",
+            "approximate_run_time": "3",
+            "urgency": "6",
+            "size": "400",
+            "core_estimation": "2"
+        },
     "25": {
-               "name": "file9.py",
-                "approximate_run_time": "1",
-                "urgency": "9",
-                "size": "61",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 4 -c 2",
+            "approximate_run_time": "4",
+            "urgency": "1",
+            "size": "300",
+            "core_estimation": "3"
+        },
+    "25": {
+            "name": "crack.py -l 5 -c 2",
+            "approximate_run_time": "5",
+            "urgency": "3",
+            "size": "500",
+            "core_estimation": "2"
+        },
+    "25": {
+            "name": "crack.py -l 5 -c 3",
+            "approximate_run_time": "3",
+            "urgency": "8",
+            "size": "500",
+            "core_estimation": "3"
+        },
+    "25": {
+            "name": "crack.py -l 5 -c 2",
+            "approximate_run_time": "5",
+            "urgency": "2",
+            "size": "500",
+            "core_estimation": "2"
+        },
     "26": {
-               "name": "json.sh",
-                "approximate_run_time": "1",
-                "urgency": "6",
-                "size": "291",
-                "core_estimation": "1"
-                },
-        
+            "name": "crack.py -l 5 -c 1",
+            "approximate_run_time": "5",
+            "urgency": "10",
+            "size": "500",
+            "core_estimation": "1"
+        },
     "27": {
-               "name": "machines.py",
-                "approximate_run_time": "1",
-                "urgency": "4",
-                "size": "429",
-                "core_estimation": "2"
-                },
-        
+            "name": "crack.py -l 4 -c 1",
+            "approximate_run_time": "4",
+            "urgency": "10",
+            "size": "400",
+            "core_estimation": "1"
+        },
     "28": {
-               "name": "reddit.py",
-                "approximate_run_time": "1",
-                "urgency": "6",
-                "size": "2876",
-                "core_estimation": "3"
-                },
-        
+            "name": "crack.py -l 4 -c 1",
+            "approximate_run_time": "4",
+            "urgency": "9",
+            "size": "400",
+            "core_estimation": "1"
+        },
     "29": {
-               "name": "test_demographics.sh",
-                "approximate_run_time": "2",
-                "urgency": "1",
-                "size": "9784",
-                "core_estimation": "3"
-                },
-        
+            "name": "crack.py -l 4 -c 1",
+            "approximate_run_time": "4",
+            "urgency": "10",
+            "size": "400",
+            "core_estimation": "1"
+        },
     "30": {
-               "name": "test_exists.sh",
-                "approximate_run_time": "1",
-                "urgency": "2",
-                "size": "1054",
-                "core_estimation": "3"
-                },
-        
+            "name": "crack.py -l 5 -c 3",
+            "approximate_run_time": "4",
+            "urgency": "5",
+            "size": "500",
+            "core_estimation": "3"
+        },
     "31": {
-               "name": "test_reddit.sh",
-                "approximate_run_time": "2",
-                "urgency": "9",
-                "size": "8398",
-                "core_estimation": "3"
-                },
-        
+            "name": "crack.py -l 5 -c 4",
+            "approximate_run_time": "4",
+            "urgency": "10",
+            "size": "500",
+            "core_estimation": "4"
+        },
     "32": {
-               "name": "test_scripts.sh",
-                "approximate_run_time": "2",
-                "urgency": "8",
-                "size": "1468",
-                "core_estimation": "3"
-                },
-        
-    "33": {
-               "name": "test_translations.sh",
-                "approximate_run_time": "1",
-                "urgency": "4",
-                "size": "1381",
-                "core_estimation": "3"
-                },
-        
-    "34": {
-               "name": "translate1.py",
-                "approximate_run_time": "1",
-                "urgency": "8",
-                "size": "173",
-                "core_estimation": "1"
-                },
-        
-    "35": {
-               "name": "translate2.py",
-                "approximate_run_time": "1",
-                "urgency": "6",
-                "size": "215",
-                "core_estimation": "1"
-                },
-        
-    "36": {
-               "name": "translate3.py",
-                "approximate_run_time": "1",
-                "urgency": "7",
-                "size": "376",
-                "core_estimation": "2"
-                },
-        
-   "37": {
-          "name": "hulk.py",
-          "approximate_run_time": "5",
-          "urgency": "6",
-          "size": "3785",
-          "core_estimation": "4"
+            "name": "crack.py -l 3 -c 2",
+            "approximate_run_time": "3",
+            "urgency": "10",
+            "size": "300",
+            "core_estimation": "2"
         }
 }
