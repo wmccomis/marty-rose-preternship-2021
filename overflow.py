@@ -37,4 +37,4 @@ def process_jobs(filename):
         sender(jobdata)
         q.get()
 
-process_jobs("data2.json")
+process_jobs("data.json")
