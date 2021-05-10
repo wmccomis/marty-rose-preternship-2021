@@ -25,9 +25,10 @@ def process_jobs(filename):
     for item in data.keys():
         q.put(data[item])
 
+    serverID = 0
     while (not q.empty()):
         curr_job = q.queue[0]
-        serverID, cores_used = handle_job(summedData(), curr_job["core_estimation"], serverID + 1)
+        serverID, cores_used = handle_job(summedData(), curr_job["core_estimation"], serverID)
         if (serverID == -1):
             sleep(0.5)
             continue
