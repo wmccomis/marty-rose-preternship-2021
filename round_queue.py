@@ -8,7 +8,7 @@ from queue import Queue
 from time import sleep
 import json
 
-from receiver import *
+from round_robin import *
 from importance import *
 from sender import *
 
