@@ -4,7 +4,7 @@
 # lmarusha@nd.edu
 #
 # reciever.py
-# Created: 18 May 2021
+# Created: 18 April 2021
 # Purpose: handle the input of a job and determine which machine to send it to
 
 def handle_job(server_data, estimated_cores):
