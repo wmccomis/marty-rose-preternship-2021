@@ -7,6 +7,8 @@
 # Created: 18 April 2021
 # Purpose: handle the input of a job and determine which machine to send it to
 
+from time import sleep 
+
 def handle_job(server_data, estimated_cores):
     # server_data is a dictionary, estimated_cores is an integer
     serverID = -1
@@ -27,7 +29,7 @@ def handle_job(server_data, estimated_cores):
                 break
 
         # if a job has n+1 cores estimated and a server has n cores, job will agree to be run with n cores
-        elif (int(opencores) + 1 == int(estimated_cores)):
+        elif (int(opencores) + 1 == int(estimated_cores) and int(opencores) != 0):
             serverID = server
             cores_used = opencores
 
@@ -35,6 +37,7 @@ def handle_job(server_data, estimated_cores):
         print("All servers are using all of their cores. Please wait until cores are available.\n")
         return [-1, -1]
 
+    sleep(1)
     print(f'\nThis job will be sent to the server with the most available processing power, server {serverID}, and will use {cores_used} cores.\n')
     return serverID, cores_used  
 
